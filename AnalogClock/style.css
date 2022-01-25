@@ -1,0 +1,46 @@
+html {
+	background: url(./images/mountainBG.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+body {
+	width: 30rem;
+	height: 30rem;
+	border: 20px;
+	border-radius: 50%;
+	margin: 50px auto;
+}
+
+.clock {
+	width: 30rem;
+	height: 30rem;
+	border: 20px solid #cccfc8;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	padding: 2rem;
+	box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+		inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clockFace {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translate(-3px); /* account for the height fo the clock hands */
+}
+
+.hand {
+	width: 50%;
+	height: 6px;
+	background: #030504;
+	position: absolute;
+	top: 50%;
+	transform-origin: 100%; /* origin set to 100% so the hands rotate at the right rather than at center */
+	transform: rotate(
+		90deg
+	); /* Set hands so they are starting in an upright position */
+	transition: all 0.5s;
+}
