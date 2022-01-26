@@ -1,0 +1,35 @@
+/* Defining variables in root (think global scope in PY or JS) */
+:root {
+	--base: #ffc600;
+	--spacing: 10px;
+	--blur: 10px;
+}
+
+img {
+	padding: var(--spacing); /* Calling the variable spacing */
+	background: var(--base); /* Calling the variable base */
+	filter: blur(var(--blur)); /* Calling the variable blur */
+}
+
+/* setting color for the JS in span with variable and class "hl" */
+.hl {
+	color: var(--base);
+}
+
+/* misc styles, nothing to do with CSS variables */
+body {
+	text-align: center;
+	background: #193549;
+	color: white;
+	font-family: "helvetica neue", sans-serif;
+	font-weight: 100;
+	font-size: 50px;
+}
+
+.controls {
+	margin-bottom: 50px;
+}
+
+input {
+	width: 100px;
+}
